@@ -1,9 +1,11 @@
 import string
 import random
 
-from numpy import number
-from sympy import numbered_symbols
+#from numpy import number
+#10from sympy import numbered_symbols
 
+#declare password requirement variables
+#Password would include lettesr, numbers, and special characters
 letters = list(string.ascii_letters)
 numbers = list(string.digits)
 specialCharacters = list("!@#$%^&*()")
@@ -19,7 +21,7 @@ def generate_password():
 
     characters_count = letters_count + number_count + special_Characters_count
 
-    if (characters_count > passwordLength)
+    if (characters_count > passwordLength):
         print("Characters total count is greater than the password length.")
         return
 
@@ -31,8 +33,8 @@ def generate_password():
     for i in range(number_count):
         password.append(random.choice(numbers))
     
-    for i in range(specialCharacters):
-        password.append(random.choice(specialCharacters))
+    for i in range(special_Characters_count):
+        password.append(random.choice(special_Characters_count))
 
 
     if characters_count < passwordLength:

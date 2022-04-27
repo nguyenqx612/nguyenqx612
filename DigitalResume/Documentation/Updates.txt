@@ -1,0 +1,146 @@
+BreezyCV vCard HTML Template Updates
+
+==============================================================
+v1.0
+==============================================================
+
+Initial release
+
+==============================================================
+v1.1 (11 April 2020)
+==============================================================
+
+- New feature: Added a new subpage - Home
+- New feature: Animated background added
+- New feature: Added section "Fun Facts"
+- New feature: Added section "Pricing"
+- Added block "Copyrights"
+
+Modified files:
+1. index.html
+2. css/main.css
+3. js/main.js
+
+==============================================================
+v1.2 (16 April 2020)
+==============================================================
+
+- New feature: Dark version was added
+- Improved: Styles
+- Improved: JS
+
+Modified files:
+1. index.html
+2. blog-post-1.html
+3. css/main.css
+4. js/main.js
+5. js/animating.js
+
+
+==============================================================
+v1.3 (15 September 2020)
+==============================================================
+
+- New Feature: New layout style - Full Width.
+
+
+==============================================================
+v1.4 (1 April 2021)
+==============================================================
+
+- Updated version of jQuery.
+
+--------------
+How to update:
+--------------
+
+1. In all HTML files (index.html & blog-post-1.html), you need to replace this line:
+
+<script src="js/jquery-2.1.3.min.js"></script>
+
+With this line:
+
+<script src="js/jquery.min.js"></script>
+
+2. js/main.js file. Replace this line:
+
+$(document).on('ready', function() {
+
+With this line:
+
+$(document).ready(function () {
+
+3. Copy this file from the updated version of the template: js/jquery.min.js
+
+
+
+==============================================================
+v1.5 (26 April 2021)
+==============================================================
+
+- Improved: Styles.
+- Improved: HTML.
+
+--------------
+How to update:
+--------------
+
+1. Open css/main.css file
+
+2. Add these styles to the end of the file:
+
+.animated-section {
+  background-color: transparent;
+  padding: 0;
+}
+
+.section-content {
+  background-color: #fff;
+  padding: 60px;
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -ms-transform: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+Note: If you are using the dark version then for this class: ".section-content" change the background color to this: "background-color: #222;"
+
+3. Save changes.
+
+4. Open index.html file.
+
+5. For each section (subpage), you need to change the markup of the top part (this is not necessary for the start section, the section with the name and carousel of subheadings).
+
+6. Using the "About Me" subpage as an example:
+
+Find these lines:
+
+                <div class="page-title">
+                  <h2>About <span>Me</span></h2>
+                </div>
+
+                <div class="section-content">
+
+Replace them with these lines:
+
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>About <span>Me</span></h2>
+                  </div>
+
+7. Save changes. Note: This is relevant for these sections (subpages): About Me, Resume, Portfolio, Blog, Contact.
+
